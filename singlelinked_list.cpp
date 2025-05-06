@@ -150,7 +150,7 @@ int main()
                     cout << "data tidak ditemukan" << endl;
                 }
                 else 
-                    cout << endl
+                    cout << endl;
                     cout << "data dengan nomor mahasiswa " << nim << "berhasil dihapus" << endl;
             }
             break;
@@ -183,6 +183,18 @@ int main()
 
                 }
             }
+            break;
+            case '5':
+            {
+                exit(0);
+            }
+            break;
+            default:
+            {
+                cout << "pilihan salah !." << endl;
+            }
+            break;
+
            
         }
     }
