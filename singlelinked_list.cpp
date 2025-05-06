@@ -33,8 +33,25 @@ class LinkedList {
                 newNode->next = START;
                 START = newNode;
                 return;
-            }   
+            }  
+            Node *previous = START;
+            Node *current = START;
+
+            while ((current != NULL) && (nim >= current->noMhs)) 
+            {
+                if (nim == current->noMhs)
+                {
+                    cout << "\nDuplikat noMhs tidak diijinkan\n" ;
+                    return;
+                }
+                previous = current;
+                current = current->next;
+            } 
+            newNode->next = current;
+            previous->next = newNode;
         }
+        
+
 
         
 
